@@ -1,0 +1,25 @@
+{
+  "name": "jspm-skip-rollup-issue",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build-skip-rollup": "jspm build jspm-skip-rollup-issue skipped-rollup.build.js --skip-rollup",
+    "build-with-rollup": "jspm build jspm-skip-rollup-issue with-rollup.build.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "jspm": "^0.17.0-beta.14"
+  },
+  "jspm": {
+    "name": "jspm-skip-rollup-issue",
+    "main": "jspm-skip-rollup-issue.js",
+    "directories": {
+      "lib": "src"
+    },
+    "devDependencies": {
+      "plugin-babel": "npm:systemjs-plugin-babel@^0.0.10"
+    }
+  }
+}
